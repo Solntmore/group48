@@ -13,7 +13,6 @@ public class RubberDuck extends Duck implements Swimmable{
     @Override
     public void quack() {
         System.out.println("Не умеет крякать");
-
     }
 
     @Override
