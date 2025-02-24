@@ -15,12 +15,12 @@ public class Main {
         PlushDuck plushDuck = new PlushDuck("Полли", "розовая");
         RubberDuck rubberDuck = new RubberDuck("Люся", "желтая");
 
-        ArrayList<Ducks> ducks = new ArrayList<>();
+        ArrayList<Duck> ducks = new ArrayList<>();
         ducks.add(liveDuck);
         ducks.add(plushDuck);
         ducks.add(rubberDuck);
 
-        for (Ducks duck : ducks) {
+        for (Duck duck : ducks) {
             System.out.println("\nМеня зовут " + duck.getName());
             duck.swim();
             if (duck instanceof Quacking) {

@@ -1,6 +1,6 @@
 package lesson13.hm.murzina;
 
-public class LiveDuck extends Ducks implements Flyable, Quacking, Reproducible {
+public class LiveDuck extends Duck implements Flyable, Quacking, Reproducible {
     public LiveDuck(String name, String color) {
         super(name, color);
     }

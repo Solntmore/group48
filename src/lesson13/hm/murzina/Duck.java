@@ -2,11 +2,11 @@ package lesson13.hm.murzina;
 
 import java.util.Objects;
 
-public abstract class Ducks {
+public abstract class Duck {
     private String name;
     private String color;
 
-    public Ducks(String name, String color) {
+    public Duck(String name, String color) {
         this.name = name;
         this.color = color;
     }
@@ -32,7 +32,7 @@ public abstract class Ducks {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Ducks ducks = (Ducks) o;
+        Duck ducks = (Duck) o;
         return Objects.equals(name, ducks.name) && Objects.equals(color, ducks.color);
     }
 

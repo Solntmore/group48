@@ -1,6 +1,6 @@
 package lesson13.hm.murzina;
 
-public class RubberDuck extends Ducks {
+public class RubberDuck extends Duck {
     public RubberDuck(String name, String color) {
         super(name, color);
     }

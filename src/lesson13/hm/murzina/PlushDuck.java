@@ -1,6 +1,6 @@
 package lesson13.hm.murzina;
 
-public class PlushDuck extends Ducks implements Quacking {
+public class PlushDuck extends Duck implements Quacking {
     public PlushDuck(String name, String color) {
         super(name, color);
     }
