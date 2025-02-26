@@ -1,5 +1,6 @@
 package lesson16;
 
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -9,18 +10,15 @@ public class MergeConflictDemo {
         Set<Integer> numbers = new TreeSet<>();
 
         System.out.println("\nadd(E element): Добавляет элемент в множество, если он отсутствует.");
-        numbers.add(1);
-        numbers.add(8);
-        numbers.add(2);
-        numbers.add(4);
+        numbers.add(100);
+        numbers.add(115);
+        numbers.add(2345);
+        numbers.add(7453);
         numbers.add(99);
-        numbers.add(2);
+
 
         System.out.println("\nsize(): Возвращает количество элементов в множестве.");
         System.out.println("Размер коллекции - " + numbers.size());
-
-        System.out.println("\nisEmpty(): Проверяет, пусто ли множество.");
-        System.out.println("Коллекция пустая? - " + numbers.isEmpty());
 
         System.out.println("\nremove(Object o): Удаляет элемент из множества, если элемент присутствует.\n");
         numbers.remove(1);
@@ -39,13 +37,16 @@ public class MergeConflictDemo {
 //        }
 
 //        numbers.removeIf(number -> number == 2);
-//        Iterator<Integer> iterator = numbers.iterator();
-//        while (iterator.hasNext()) {
-//            int number = iterator.next();
-//            if (number == 2) {
-//                iterator.remove();
-//            }
-//        }
+        Iterator<Integer> iterator = numbers.iterator();
+        while (iterator.hasNext()) {
+            int number = iterator.next();
+            if (number == 2) {
+                iterator.remove();
+            }
+        }
+
+        System.out.println("\nisEmpty(): Проверяет, пусто ли множество.");
+        System.out.println("Коллекция пустая? - " + numbers.isEmpty());
 
         System.out.println("\nclear(): Очищает список, удаляя все его элементы.");
         numbers.clear();
