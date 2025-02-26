@@ -5,29 +5,23 @@ import java.util.TreeSet;
 
 public class MergeConflictDemo {
     public static void main(String[] args) {
-        System.out.println("Создаем новый список:");
+        System.out.println("Создаем новый новый список:");
         Set<Integer> numbers = new TreeSet<>();
 
         System.out.println("\nadd(E element): Добавляет элемент в множество, если он отсутствует.");
-        numbers.add(1);
-        numbers.add(8);
+        numbers.add(17);
+        numbers.add(83);
         numbers.add(2);
-        numbers.add(4);
+        numbers.add(42);
         numbers.add(99);
-        numbers.add(2);
-
-        System.out.println("\nsize(): Возвращает количество элементов в множестве.");
-        System.out.println("Размер коллекции - " + numbers.size());
-
-        System.out.println("\nisEmpty(): Проверяет, пусто ли множество.");
-        System.out.println("Коллекция пустая? - " + numbers.isEmpty());
+        numbers.add(2666);
 
         System.out.println("\nremove(Object o): Удаляет элемент из множества, если элемент присутствует.\n");
         numbers.remove(1);
 
-        System.out.println("\ncontains(Object o): Проверяет, содержится ли элемент в множестве.");
-        System.out.println("Проверка, есть ли элемент 99 - " + numbers.contains(99));
-        System.out.println("Проверка, есть ли элемент 0 - " + numbers.contains(0));
+        System.out.println("\ncontains(Object o): Проверяет, содержится ли элемент в этом множестве.");
+        System.out.println("Проверка, есть ли такой элемент 99 - " + numbers.contains(99));
+        System.out.println("Проверка, есть ли такой элемент 0 - " + numbers.contains(0));
 
         System.out.println("\nВывод всех элементов до очистки");
         System.out.println(numbers);
@@ -47,10 +41,7 @@ public class MergeConflictDemo {
 //            }
 //        }
 
-        System.out.println("\nclear(): Очищает список, удаляя все его элементы.");
-        numbers.clear();
-
-        System.out.println("\nВывод всех элементов после очистки");
-        System.out.println(numbers);
+//        System.out.println("\nВывод всех элементов после очистки");
+//        System.out.println(numbers);
     }
 }
