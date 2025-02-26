@@ -10,15 +10,18 @@ public class MergeConflictDemo {
         Set<Integer> numbers = new TreeSet<>();
 
         System.out.println("\nadd(E element): Добавляет элемент в множество, если он отсутствует.");
-        numbers.add(100);
-        numbers.add(115);
-        numbers.add(2345);
-        numbers.add(7453);
+        numbers.add(17);
+        numbers.add(83);
+        numbers.add(2);
+        numbers.add(42);
         numbers.add(99);
-
+        numbers.add(2);
 
         System.out.println("\nsize(): Возвращает количество элементов в множестве.");
         System.out.println("Размер коллекции - " + numbers.size());
+
+        System.out.println("\nisEmpty(): Проверяет, пусто ли множество.");
+        System.out.println("Коллекция пустая? - " + numbers.isEmpty());
 
         System.out.println("\nremove(Object o): Удаляет элемент из множества, если элемент присутствует.\n");
         numbers.remove(1);
