@@ -31,11 +31,11 @@ public class Main {
         System.out.println("\nВывод всех элементов до очистки");
         System.out.println(numbers);
 
-//        for (Integer number : numbers) {
-//            if (number == 2) {
-//                numbers.remove(number);
-//            }
-//        }
+        for (Integer number : numbers) {
+            if (number == 2) {
+                numbers.remove(number);
+            }
+        }
 
 //        numbers.removeIf(number -> number == 2);
 //        Iterator<Integer> iterator = numbers.iterator();
